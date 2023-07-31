@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.17; // solidity compiler version greater than or equal to version 0.8.17
+pragma solidity ^0.8.18; // solidity compiler version greater than or equal to version 0.8.17
 
 contract CounterApp {
     uint public count; 
