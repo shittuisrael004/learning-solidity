@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
 
-contract Primitives {
+contract PrimitiveDataTypes {
+    // Primitive Data Types: boolean, uint, int, address & bytes
     bool public boo = true;
-    string public text = "Hello";
 
     /*
     uint stands for unsigned integer, meaning non negative integers
