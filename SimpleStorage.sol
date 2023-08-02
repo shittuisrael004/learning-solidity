@@ -2,6 +2,8 @@
 pragma solidity ^0.8.18;
 
 contract SargeSimpleStorage{
+    //By Patrick Collins
+
     // Basic Types: boolean, uint, int, address, bytes
     // bool hasFavoriteNumber = true;
     // uint256 favoriteNumber = 12345;
@@ -48,4 +50,21 @@ contract SargeSimpleStorage{
     }
     
     // This is our contract address 0x75dB0F81442130bf29Ddb5dA5450A74067D54E46
+}
+
+contract SimpleStorage {
+    // By SmartContractProgrammer
+
+    // State variable to store a number
+    uint public num;
+
+    // You need to send a transaction to write to a state variable.
+    function set(uint _num) public {
+        num = _num;
+    }
+
+    // You can read from a state variable without sending a transaction.
+    function get() public view returns (uint) {
+        return num;
+    }
 }
