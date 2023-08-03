@@ -44,8 +44,9 @@ contract Array {
         delete arr[index];
     }
 
-    function examples() external {
+    function examples() pure external returns(uint[] memory) {
         // create array in memory, only fixed size can be created
         uint[] memory a = new uint[](5);
+        return a;
     }
 }

@@ -5,3 +5,5 @@
 Currently learning solidity
 
 Tracking and updating my solidity progress with this github repository
+
+I'll recommend that as a beginner, you should paste the codes on remix and check them out so you understand better
