@@ -6,7 +6,7 @@ import {SargeSimpleStorage} from "./SimpleStorage.sol"; // Named import - import
 
 contract StorageFactory {
     
-    SargeSimpleStorage[ ] public listOfSimpleStorageContracts;
+    SargeSimpleStorage[] public listOfSimpleStorageContracts;
     
     function createSimpleStorageContract() public {
         SargeSimpleStorage newSimpleStorageContract = new SargeSimpleStorage(); // 'new' keyword is used to deploy a contract

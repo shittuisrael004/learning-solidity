@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
 
+contract Structs {
+
+    // You can define your own type by creating a struct.
+    // They are useful for grouping together related data.
+    // Structs can be declared outside of a contract and imported in another contract.
+    
     struct Todo {
         string text;
         bool completed;
     }
 
-contract Structs {
-
-    // You can define your own type by creating a struct.
-    // They are useful for grouping together related data.
-    // Just like Ennum, Structs can also be declared outside of a contract and imported in another contract.
-    
     // An array of 'Todo' structs
     Todo[] public todos;
 
@@ -47,6 +47,6 @@ contract Structs {
     // update completed
     function toggleCompleted(uint _index) public {
         Todo storage todo = todos[_index];
-        todo.completed = !todo.completed;
+        todo.completed = !todo.completed; // this will change to true if todo.completed == false or change to false if todo.completed == true
     }
 }
