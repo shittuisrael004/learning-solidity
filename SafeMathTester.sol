@@ -26,5 +26,6 @@ contract SafeMathTester{
 //     function add() public{
 //        unchecked { bigNumber = bigNumber + 1};
 //        // with 'unchecked' keyword, this code will wrap, uint8 (255 + 1) == 0
+//        // 'unchecked' saves gas, so use only when youre positive the values will not overflow or underflow
 //     }
 //  }
