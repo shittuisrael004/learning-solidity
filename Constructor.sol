@@ -35,9 +35,7 @@ contract C is X, Y {
     constructor(string memory _name, string memory _text) X(_name) Y(_text) {}
 }
 
-// Parent constructors are always called in the order of inheritance
-// regardless of the order of parent contracts listed in the
-// constructor of the child contract.
+// Parent constructors are always called in the order of inheritance regardless of the order of parent contracts listed in the constructor of the child contract.
 
 // Order of constructors called:
 // 1. X

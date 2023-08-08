@@ -5,7 +5,7 @@ pragma solidity ^0.8.18;
 //  Let's learn how to correctly override inherited state variables.
 
 contract A {
-    string public name = "Contract A";
+    string name = "Contract A";
 
     function getName() public view returns (string memory) {
         return name;
@@ -22,6 +22,7 @@ contract C is A {
     // This is the correct way to override inherited state variables.
     constructor() {
         name = "Contract C";
+        // State variable in parent contracts can only be overridden by calling it in the constructor of the child contract
     }
 
     // C.getName returns "Contract C"
