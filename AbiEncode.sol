@@ -3,6 +3,10 @@ pragma solidity ^0.8.18;
 
 // ABI Encode
 // abi.encode encodes data into bytes.
+// 3 ways to encode call data:
+//  1. abi.encodeWithSignature()
+//  2. abi.encodeWithSelector()
+//  3. abi.encodeCall()
 
 interface IERC20 {
     function transfer(address, uint) external;
