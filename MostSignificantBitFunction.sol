@@ -16,7 +16,7 @@ contract MostSignificantBitFunction {
             x >>= 64;
             msb += 64;
         }
-        // x >= 2 ** 32C 
+        // x >= 2 ** 32
         if (x >= 0x100000000) {
             x >>= 32;
             msb += 32;
