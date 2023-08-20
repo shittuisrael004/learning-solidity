@@ -15,3 +15,7 @@ I'll recommend that as a beginner, you should paste the codes on remix and check
     ```
 
 Sample contract saying 'Hello'.
+
+Finally Done with this learning solidity repository, onto apllications of solidity next.
+
+LFG 🚀🔥
